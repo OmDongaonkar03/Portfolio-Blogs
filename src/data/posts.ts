@@ -1,6 +1,7 @@
-import matter from "gray-matter";
 import { Buffer } from "buffer";
-window.Buffer = Buffer;
+globalThis.Buffer = Buffer;
+
+import matter from "gray-matter";
 
 export interface Post {
   slug: string;
