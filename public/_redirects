@@ -1,0 +1,2 @@
+# Redirect pages.dev to custom domain
+https://portfolio-blogs.pages.dev/* https://blogs.omdongaonkar.in/:splat 301!
