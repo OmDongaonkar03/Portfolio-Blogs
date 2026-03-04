@@ -1,7 +1,7 @@
 ---
 title: "I Reviewed My Own Code Like I Was Trying to Break It"
 date: "2026-03-1"
-order: 1
+order: 2
 tags: ["security", "php", "opensource"]
 excerpt: "The day after I shipped Micrologs, I did a full security and performance review on my own code. I found 5 real issues. None exotic. All the kind of thing that doesn't hurt at 100 visits/day and quietly breaks at 10,000."
 readTime: "8 min read"
