@@ -1,0 +1,28 @@
+{
+  "name": "om.writes — Om Dongaonkar",
+  "short_name": "om.writes",
+  "description": "Thoughts on backend architecture, performance engineering, security, and building production-grade software.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fcfcfd",
+  "theme_color": "#fcfcfd",
+  "lang": "en",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "https://omdongaonkar.in/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "https://omdongaonkar.in/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "https://omdongaonkar.in/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

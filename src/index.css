@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 99%;
+    --foreground: 220 15% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 15%;
+    --primary: 220 70% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 10% 96%;
+    --secondary-foreground: 220 15% 15%;
+    --muted: 220 10% 96%;
+    --muted-foreground: 220 10% 45%;
+    --accent: 220 70% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 10% 90%;
+    --input: 220 10% 90%;
+    --ring: 220 70% 50%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 15% 6%;
+    --foreground: 220 10% 92%;
+    --card: 220 15% 8%;
+    --card-foreground: 220 10% 92%;
+    --popover: 220 15% 8%;
+    --popover-foreground: 220 10% 92%;
+    --primary: 220 70% 60%;
+    --primary-foreground: 220 15% 6%;
+    --secondary: 220 12% 12%;
+    --secondary-foreground: 220 10% 92%;
+    --muted: 220 12% 14%;
+    --muted-foreground: 220 10% 55%;
+    --accent: 220 70% 60%;
+    --accent-foreground: 220 15% 6%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 12% 16%;
+    --input: 220 12% 16%;
+    --ring: 220 70% 60%;
+    --sidebar-background: 220 15% 8%;
+    --sidebar-foreground: 220 10% 92%;
+    --sidebar-primary: 220 70% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 12% 12%;
+    --sidebar-accent-foreground: 220 10% 92%;
+    --sidebar-border: 220 12% 16%;
+    --sidebar-ring: 220 70% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-light antialiased;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+  }
+}
+
+/* Prose styles for markdown content */
+.prose {
+  @apply text-foreground leading-relaxed;
+  font-weight: 300;
+}
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  @apply text-foreground font-normal mt-10 mb-4;
+}
+.prose h2 {
+  @apply text-2xl;
+}
+.prose h3 {
+  @apply text-xl;
+}
+.prose p {
+  @apply mb-6 text-foreground/90;
+}
+.prose a {
+  @apply text-primary underline underline-offset-4 decoration-primary/40 hover:decoration-primary transition-colors;
+}
+.prose code {
+  @apply bg-secondary text-foreground px-1.5 py-0.5 rounded text-sm font-normal;
+}
+.prose pre {
+  @apply bg-secondary rounded-lg p-4 overflow-x-auto mb-6;
+}
+.prose pre code {
+  @apply bg-transparent p-0;
+}
+.prose ul, .prose ol {
+  @apply mb-6 pl-6;
+}
+.prose li {
+  @apply mb-2;
+}
+.prose ul li {
+  @apply list-disc;
+}
+.prose ol li {
+  @apply list-decimal;
+}
+.prose blockquote {
+  @apply border-l-2 border-primary/30 pl-4 italic text-muted-foreground mb-6;
+}
+.prose hr {
+  @apply border-border my-8;
+}
+.prose img {
+  @apply rounded-lg my-6;
+}
+.prose strong {
+  @apply font-normal text-foreground;
+}
+
+/* Reading progress bar */
+.reading-progress {
+  @apply fixed top-0 left-0 h-[2px] bg-primary z-50 transition-none;
+}
