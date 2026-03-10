@@ -1,7 +1,7 @@
 ---
 title: "Your portfolio site is probably broken in ways you haven't checked"
 date: "2026-03-05"
-order: 1
+order: 2
 tags: ["performance", "security", "webdev"]
 excerpt: "I checked my portfolio properly for the first time. D security grade, 4.27s load time, 227 kB of unnecessary data. Here's exactly what was wrong and how I fixed it in a day."
 readTime: "6 min read"

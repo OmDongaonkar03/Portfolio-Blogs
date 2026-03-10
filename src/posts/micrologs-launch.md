@@ -1,7 +1,7 @@
 ---
 title: "I Built a Self-Hostable Plausible + Sentry Alternative in One Day"
 date: "2026-02-27"
-order: 3
+order: 4 
 tags: ["analytics", "php", "opensource"]
 excerpt: "Every analytics or error tracking tool assumed you had a VPS or were happy paying a SaaS bill. So I built one that runs on shared hosting. In a day."
 readTime: "6 min read"
