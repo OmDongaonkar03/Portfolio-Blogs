@@ -1,7 +1,7 @@
 ---
 title: "What Happens When You Move From Shared Hosting to a VPS"
 date: "2026-03-10"
-order: 1
+order: 2
 tags: ["performance", "php", "architecture", "self-hosted"]
 excerpt: "Micrologs v1 ran on shared hosting — PHP + MySQL, no extras, ~10k pageviews/day ceiling. v2 runs on a VPS. The ceiling jumped to 500k pageviews/day on a single node — and unbounded with proper load balancing. Here's what actually changed."
 readTime: "7 min read"
